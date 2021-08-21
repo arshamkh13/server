@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Arshamkh</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Main-Page.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="Js/jquery-3.5.1.min.js"></script>
+    <script src="Js/typed.js"></script>
+    <script scr="Js/Contact.js"></script>
+</head>
+
+<body>
+    <!-- LOADER -->
+    <div class="loader-wrapper">
+        <svg class="loader" viewBox="-2000 -1000 4000 2000">
+            <path id="stroke" d="M354-354A500 500 0 1 1 354 354L-354-354A500 500 0 1 0-354 354z"></path>
+            <use xlink:href="#stroke" stroke-dasharray="1570 5143" stroke-dashoffset="6713px"></use>
+        </svg>
+    </div>
+
+    <script>
+        $(window).on("load", function() {
+            $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+    <!-- RIGHT SIDE -->
+    <div class="nav-side">
+        <a href="#">ARSHAM KH</a>
+        <!-- INFINIT SYMBOL -->
+        <svg class="symbol" viewBox="-2000 -1000 4000 2000">
+            <path id="stroke" d="M354-354A500 500 0 1 1 354 354L-354-354A500 500 0 1 0-354 354z"></path>
+            <use xlink:href="#stroke" stroke-dasharray="1570 5143" stroke-dashoffset="6713px"></use>
+        </svg>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/arshamkh.13/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/arsham-khoshanmanesh/">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.arshamkh.13@gmail.com">
+                    <i class="fas fa-at"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- BUTTONS -->
+    <div class="navbar">
+        <ul class="nav">
+            <li>
+                <a href="#home">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#about">
+                    About Me
+                </a>
+            </li>
+            <li>
+                <a href="#university">
+                    University
+                </a>
+            </li>
+            <li>
+                <a href="#works">
+                    My Works
+                </a>
+            </li>
+            <li>
+                <a href="#contact">
+                    Contact Me
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- HOME || LANDING PAGE SECTION -->
+    <section class="home-area" id="home">
+        <!-- LANDING PAGE TEXT ANIMATION -->
+        <div class="home-text">
+            <div class="text1">Welcome</div>
+            <div class="text2">I am web developer</div>
+        </div>
+        <script>
+            $(window).on("load", function() {
+                $(".home-text").fadeIn("slow");
+            });
+        </script>
+
+        <!--
+        <div class="home-text"></div>
+        <script>
+            var typed = new Typed('.home-text', {
+                strings: [
+                    'Welcome To My WebSite ',
+                    'My Name Is Arsham ',
+                    'I Am Web Designer '
+                ],
+                typeSpeed: 150,
+                backSpeed: 50,
+                loop: true
+            });
+        </script>
+        -->
+    </section>
+    <!-- ABOUT ME SECTION -->
+    <section class="about-area" id="about">
+        <div class="about-text">
+            <h1>About Me</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aspernatur tempore quae eaque earum non consequuntur aperiam. Unde culpa vero cum repellat libero aliquid non molestias, corporis repellendus animi qui aliquam? Ab officiis facere
+                cum magnam, nisi sit aperiam sequi, quisquam molestiae sapiente veniam nemo illum. Officiis culpa aperiam eius suscipit, natus non harum error repudiandae fuga cum rem soluta maiores quod totam, fugiat dignissimos? Impedit magnam placeat
+                totam nesciunt?</p>
+        </div>
+    </section>
+    <!-- UNIVERSITY SECTION -->
+    <section class="university-area" id="university">
+        <div class="university-text">
+            <h1>University</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ullam beatae blanditiis tempore distinctio nulla consectetur, dolor rem numquam obcaecati.</p>
+            <div class="login-box">
+                <div class="textbox">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username">
+                </div>
+
+                <div class="textbox">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password">
+                </div>
+
+                <input type="button" class="btn" value="Sign in">
+            </div>
+        </div>
+    </section>
+    <!-- WORK SECTION -->
+    <section class="works-area" id="works">
+        <div class="works-text">
+            <h1>My Works</h1>
+            <p>Soon!</p>
+        </div>
+    </section>
+    <!-- CONTACT FORM SECTION -->
+    <section class="contact-area" id="contact">
+        <!-- GOOGLE MAP SECTION -->
+        <iframe src="https://www.google.com/maps/d/embed?mid=1QfbJ2yApk5iz3DT_W885ND3hlVHsbNev&hl=en" width="100%" height="100%"></iframe>
+        <!-- FORM SECTION -->
+        <div class="container">
+            <h1>Contact Me</h1>
+            <form action="mailto:arshamkh.13@gmail.com" method="POST" id="my-form" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="firstName"> First Name</label>
+                    <input type="text" id="firstName" name="firstName">
+                </div>
+
+                <div class="form-group">
+                    <label for="latsName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="massage">Massage</label>
+                    <textarea name="massage" id="massage" cols="30" rows="8"></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div id="status"></div>
+        <!-- FOOTER || COPYRIGHT SECTION -->
+        <section class="footer-area">
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maiores voluptatibus dolore tempore, magnam consequatur!</p>
+            </div>
+        </section>
+    </section>
+
+
+
+</body>
+
+</html>
